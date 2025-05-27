@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "bfb496538a34e30f",
+        "id": "3e16373f7485f234",
         "type": "tabs",
         "children": [
           {
-            "id": "f7b614674df96156",
+            "id": "f8c12cc4bac2b7e6",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".gitignore",
-                "bFile": ".gitignore",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: .gitignore"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -179,13 +175,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f7b614674df96156",
+  "active": "6a7ae0ff30f2c050",
   "lastOpenFiles": [
     "Readme.md",
     "Javascript.md",
-    "Html.md",
-    "Mysql.md",
     "CSS.md",
+    "Mysql.md",
+    "Html.md",
     "虚拟DOM.md",
     "docs/algorithm/Algorithm.md",
     "Vue/Vue-slot.md",
