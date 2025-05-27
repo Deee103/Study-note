@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d58df361fe5a3fe5",
+        "id": "6e4ea41b41974ef0",
         "type": "tabs",
         "children": [
           {
-            "id": "36f7d6adc36c00f4",
+            "id": "9e7bc873a8679f9e",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -179,12 +175,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6a7ae0ff30f2c050",
+  "active": "9e7bc873a8679f9e",
   "lastOpenFiles": [
-    "Html.md",
-    "Mysql.md",
-    "Readme.md",
     "Javascript.md",
+    "Mysql.md",
+    "Html.md",
+    "Readme.md",
     "CSS.md",
     "虚拟DOM.md",
     "docs/algorithm/Algorithm.md",
