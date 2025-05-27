@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "cf2854c5e1de9f01",
+        "id": "2e44901999ae4c37",
         "type": "tabs",
         "children": [
           {
-            "id": "747789103d760df1",
+            "id": "7bdc5980f0586088",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "readme.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "readme"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "readme 的反向链接列表"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "readme 的出链列表"
             }
           },
           {
@@ -136,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "readme.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "readme 的大纲"
             }
           },
           {
@@ -172,10 +179,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e45f6627d05a20f4",
+  "active": "6a7ae0ff30f2c050",
   "lastOpenFiles": [
+    "img/屏幕截图 2025-05-15 003625.png",
+    "img",
+    "屏幕截图 2025-05-15 003625.png",
+    "readme.md",
+    "Javascript.md",
     "Html.md",
-    "CSS.md",
-    "Javascript.md"
+    "CSS.md"
   ]
 }
