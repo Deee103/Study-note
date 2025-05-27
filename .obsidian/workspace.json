@@ -11,14 +11,14 @@
             "id": "2a9925805447058e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Mysql.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".obsidian/plugins/obsidian-git/data.json",
+                "bFile": ".obsidian/plugins/obsidian-git/data.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Mysql"
+              "icon": "diff",
+              "title": "Diff: data.json"
             }
           }
         ]
@@ -181,9 +181,11 @@
   },
   "active": "2a9925805447058e",
   "lastOpenFiles": [
+    "Mysql.md",
+    "Readme.md",
+    "Javascript.md",
     "Html.md",
     "CSS.md",
-    "Mysql.md",
     "虚拟DOM.md",
     "docs/algorithm/Algorithm.md",
     "Vue/Vue-slot.md",
@@ -191,8 +193,6 @@
     "docs/algorithm/BinarySearch.md",
     "docs/webpack/build_process.md",
     "docs/algorithm/design1.md",
-    "Javascript.md",
-    "Readme.md",
     "docs/webpack/webpack.md",
     "docs/webpack/Rollup_Parcel_snowpack_Vite.md",
     "docs/webpack/proxy.md",
