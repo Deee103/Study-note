@@ -181,6 +181,7 @@
   },
   "active": "2a9925805447058e",
   "lastOpenFiles": [
+    "虚拟DOM.md",
     "Mysql.md",
     "docs/algorithm/Algorithm.md",
     "Vue/Vue-slot.md",
@@ -209,7 +210,6 @@
     "docs/vue3/modal_component.md",
     "docs/vue3/composition.md",
     "docs/vue3",
-    "docs/vue/vue3_vue2.md",
     "docs/vue",
     "docs/typescript",
     "docs/React",
