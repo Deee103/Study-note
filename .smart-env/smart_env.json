@@ -25,7 +25,8 @@
   "smart_notices": {
     "muted": {
       "embedding_complete": true,
-      "done_import": true
+      "done_import": true,
+      "new_version_available": true
     }
   },
   "smart_chat_threads": {
