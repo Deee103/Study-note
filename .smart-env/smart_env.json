@@ -26,7 +26,8 @@
     "muted": {
       "embedding_complete": true,
       "done_import": true,
-      "new_version_available": true
+      "new_version_available": true,
+      "done_initial_scan": true
     }
   },
   "smart_chat_threads": {
