@@ -11,3 +11,18 @@ export default defineConfig({
   },
 });
 ```
+
+
+
+## vite + TS 项目
+配置vite.config.js的同时还要配置tsconfig.json，还需要配置tsconfig.app.json和tsconfig.node.json，里面都要加上如下配置：
+```json
+"compilerOptions": {
+	// ... 其他配置
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+    },
+  },
+```
+
