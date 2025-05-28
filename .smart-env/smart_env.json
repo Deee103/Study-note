@@ -21,5 +21,25 @@
   "smart_view_filter": {
     "render_markdown": true,
     "show_full_path": false
-  }
+  },
+  "smart_notices": {
+    "muted": {
+      "embedding_complete": true,
+      "done_import": true
+    }
+  },
+  "smart_chat_threads": {
+    "active_thread_key": "",
+    "chat_model": {
+      "platform_key": "openai"
+    },
+    "system_prompt": "",
+    "detect_self_referential": true,
+    "review_context": true,
+    "stream": true,
+    "language": "en",
+    "modifier_key_to_send": "shift",
+    "use_tool_calls": true
+  },
+  "version": "3.0.1"
 }
