@@ -20,7 +20,8 @@
   "folder_exclusions": "",
   "smart_view_filter": {
     "render_markdown": true,
-    "show_full_path": false
+    "show_full_path": false,
+    "results_limit": "20"
   },
   "smart_notices": {
     "muted": {
@@ -34,7 +35,7 @@
     "active_thread_key": "Untitled Chat 1748499531034",
     "chat_model": {
       "platform_key": "openai",
-      "adapter": "open_router",
+      "adapter": "openai",
       "anthropic": {
         "model_key": "claude-3-5-sonnet-latest"
       },
@@ -17619,6 +17620,12 @@
           }
         },
         "model_key": "mistralai/mistral-7b-instruct:free"
+      },
+      "custom": {
+        "api_adapter": "openai"
+      },
+      "openai": {
+        "model_key": ""
       }
     },
     "system_prompt": "",
