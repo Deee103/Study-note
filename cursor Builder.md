@@ -1,0 +1,1 @@
+我现在要开发一个前端的商城项目 请帮我初始刷项目 使用到的技术栈有vue3+TypeScript+vue-router+pinia+element-plus+axios+echarts 使用vite创建 并配置好完整的工作流包括Eslint + Prettier + Husky + Commitlint+ lint-staged 同时还要配置src的别名 集成sass  导入mock
