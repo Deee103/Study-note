@@ -2,9 +2,9 @@
   "obsidian-git",
   "obsidian-image-auto-upload-plugin",
   "easy-typing-obsidian",
-  "vscode-editor",
   "highlightr-plugin",
   "floating-toc",
   "code-styler",
-  "multi-column-markdown"
+  "multi-column-markdown",
+  "editing-toolbar"
 ]
