@@ -1,0 +1,56 @@
+{
+  "id": "f35177cb-c658-4686-84f2-a2c0354d50c8",
+  "title": "帮我初始化一下前端开发工作流的大纲",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "帮我初始化一下前端开发工作流的大纲",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n帮我初始化一下前端开发工作流的大纲\n\n"
+        }
+      ],
+      "id": "47dc2f6f-0d77-448b-8443-e285ec4f902d",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "project/我的工作流.md"
+        }
+      ]
+    }
+  ],
+  "createdAt": 1748621576398,
+  "updatedAt": 1748621576398,
+  "schemaVersion": 1
+}
