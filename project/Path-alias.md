@@ -12,6 +12,9 @@ export default defineConfig({
 });
 ```
 
+```
+npm add -D @types/node
+```
 
 
 ## vite + TS 项目
