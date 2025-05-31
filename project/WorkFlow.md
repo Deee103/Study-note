@@ -33,6 +33,7 @@ npm add -D @types/node
 > [!tip]
 > "eslint": "^9.27.0"
 
+[ESLint](https://eslint.org/docs/head/use/getting-started)
 ```bash
 pnpm add eslint@latest -D
 ```
@@ -126,7 +127,7 @@ export default defineConfig([
  "scripts": { "lint": "eslint", "lint:fix": "eslint --fix", }
 ```
 ## Prettier
-
+[Prettier 中文网 · Prettier 是一个“有态度”的代码格式化工具](https://www.prettier.cn/)
 **安装**
 `eslint-plugin-prettier`： 将 Prettier 作为 ESlint 的扩展插件，成为 ESlint 语法检查规则的扩展部分。
 `eslint-config-prettier` ：关闭所有与Prettier冲突的ESLint规则
@@ -238,11 +239,37 @@ export default tseslint.config(
 
 ## Stylelint
 
+安装 [Stylelint](https://www.stylelint.cn/user-guide/get-started) 并创建配置：
+
+```
+npm init stylelint
+```
+
+让 Stylelint 处理项目中的所有 CSS 文件：
+
+```
+npx stylelint "**/*.css"
+```
+
+[stylelint-config-standard-scss](https://www.npmjs.com/package/stylelint-config-standard-scss)
+
+```shell
+npm install --save-dev stylelint-config-standard-scss
+```
+
+## Husky
+[Husky](https://typicode.github.io/husky/zh/get-started.html)
+```bash
+npm install --save-dev husky
+```
+**husky init** 
+`init` 命令简化了项目中的 husky 设置。它会在 `.husky/` 中创建 `pre-commit` 脚本，并更新 `package.json` 中的 `prepare` 脚本。随后可根据你的工作流进行修改。
+
+```shell
+npx husky init
+```
 
 
-
-
-## husky
 ## lint-stage
 ## commitlint
 ### 统一包管理工具
