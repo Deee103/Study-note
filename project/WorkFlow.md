@@ -387,6 +387,50 @@ symbolId: 'icon-[dir]-[name]',
 ## Vueuse
 ## Css-reset
 ## SASS
+```shell
+pnpm install -D sass
+```
 
+```ts
+//vite.config.ts
+css: {
+    // css预处理器
+    preprocessorOptions: {
+      scss: {
+        // 引入 variables.scss 这样就可以在全局中使用 variables.scss中预定义的变量了
+        // 给导入的路径最后加上 ;
+        additionalData: '@use "@/assets/style/variables.scss" as *;'
+      }
+    },
+  }
+```
+
+#### 重置全局样式
+![](img/reset.scss)
+
+```scsss
+//src/assets/style/index.scss
+@use 'reset.scss';
+```
+
+```ts
+//main.ts
+import '@/assets/style/index.scss'
+```
 ## PostCss
 #postcss-pxtorem #postcss #postcss-scss
+
+```ts
+//vite.config.ts
+css: {
+    postcss: {
+      plugins: [
+        postCssPxToRem({
+          // 自适应，px>rem转换
+          rootValue: 75,
+          propList: ['*'] // 需要转换的属性，这里选择全部都进行转换
+        })
+      ]
+    }
+  }
+```
