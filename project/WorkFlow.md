@@ -270,7 +270,10 @@ npx husky init
 ```
 
 
-## lint-stage
+## Lint-Stage
+
+
+
 ## commitlint
 ### 统一包管理工具
 在根目录创建scritps/preinstall.js
