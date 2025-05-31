@@ -1,0 +1,51 @@
+{
+  "id": "282f78ee-2d27-4224-b105-fada99e1493c",
+  "title": "在吗",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "在吗",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n在吗\n\n"
+        }
+      ],
+      "id": "831f5212-1acd-4bc3-a5df-4aad6e5c1ecc",
+      "mentionables": []
+    }
+  ],
+  "createdAt": 1748700422389,
+  "updatedAt": 1748700428682,
+  "schemaVersion": 1
+}

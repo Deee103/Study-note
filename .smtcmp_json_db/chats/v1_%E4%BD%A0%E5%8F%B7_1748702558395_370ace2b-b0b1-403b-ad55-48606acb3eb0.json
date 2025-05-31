@@ -1,0 +1,154 @@
+{
+  "id": "370ace2b-b0b1-403b-ad55-48606acb3eb0",
+  "title": "你号",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [],
+              "direction": null,
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": null,
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n你号\n\n"
+        }
+      ],
+      "id": "24222452-0939-4e48-aa28-5a3a2d88c365",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "CSS.md"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "那喊",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n那喊\n\n"
+        }
+      ],
+      "id": "dcba93db-100f-461d-b3b3-35ee5cdbe961",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "CSS.md"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "年后",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n年后\n\n"
+        }
+      ],
+      "id": "e90d4f0d-5bd9-46a2-b26c-e989a142afe8",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "CSS.md"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "我注意到你的消息中似乎包含了一些无关内容（\"你号 那喊 年后\"）。关于圣杯布局和双飞翼布局，当前文件已经提供了很好的实现和解释。如果需要任何优化或补充，请具体说明。\n\n以下是关键点总结",
+      "id": "8c2da637-982f-4b79-b38e-74b5361cae1e",
+      "metadata": {
+        "model": {
+          "providerType": "deepseek",
+          "providerId": "deepseek",
+          "id": "deepseek-chat",
+          "model": "deepseek-chat",
+          "enable": true
+        }
+      }
+    }
+  ],
+  "createdAt": 1748702475467,
+  "updatedAt": 1748702558395,
+  "schemaVersion": 1
+}
