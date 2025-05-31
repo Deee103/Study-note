@@ -284,9 +284,42 @@ npx husky init
 npm install --save-dev lint-staged
 ```
 
+```json
+//package.json
+"scripts": {
+    "lint-staged": "lint-staged"
+  },
+"lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings 0"
+    ],
+    "src/**/*.{vue,less,postcss,css,scss}": [
+      "stylelint --max-warnings 0"
+    ]
+  }
+```
 
-## commitlint
-### 统一包管理工具
+``` bash
+#.husky/pre-commit
+pnpm lint-staged
+```
+## Commitlint
+[Commitlint](https://commitlint.js.org/guides/getting-started.html)
+```shell
+npm install -D @commitlint/cli @commitlint/config-conventional
+```
+
+```js
+//commitlint.config.js
+export default { extends: ['@commitlint/config-conventional'] }
+```
+
+```shell
+# .husky/commit-msg
+npx --no-install commitlint --edit $1
+```
+
+## 统一包管理工具
 在根目录创建scritps/preinstall.js
 
 ``` bash
@@ -305,17 +338,27 @@ package.json中配置命令
 ```
 
 当使用yarn或pnpm来安装包的时候就会报错，因为install 的时候会触发preinstall（npm提供的生命周期钩子）
-## element-plus/vant ui
-## mock
+## Mockjs
 
 ``` bash
 npm i mockjs vite-plugin-mock --save-dev
 ```
 
+```ts
+//vite.config.ts
+import { viteMockServe } from 'vite-plugin-mock'
+plugins: [
+    viteMockServe({
+      mockPath: 'src/mock/',
+      logger: true,
+      enable: true
+    }),
+  ],
+```
 
-## axios
-## pinia(persistedstate)
-## svg
+## Axios
+## Pinia(persistedstate)
+## Svg
 ``` bash
 yarn add vite-plugin-svg-icons -D 
 # or 
@@ -340,10 +383,10 @@ symbolId: 'icon-[dir]-[name]',
 // customDomId: '__svg__icons__dom__',
 }), ], } }
 ```
+## Vue-router
+## Vueuse
+## Css-reset
+## SASS
 
-- 在 src/main.js 内引入注册脚本
-import 'virtual:svg-icons-register'
-## vuerouter
-## vueuse
-
-## css-reset
+## PostCss
+#postcss-pxtorem #postcss #postcss-scss
