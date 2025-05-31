@@ -257,6 +257,14 @@ npx stylelint "**/*.css"
 npm install --save-dev stylelint-config-standard-scss
 ```
 
+```json
+//.stylelintrc.json
+{
+
+  "extends": "stylelint-config-standard-scss"
+
+}
+```
 ## Husky
 [Husky](https://typicode.github.io/husky/zh/get-started.html)
 ```bash
@@ -271,7 +279,10 @@ npx husky init
 
 
 ## Lint-Stage
-
+[lint-staged - npm](https://www.npmjs.com/package/lint-staged)
+```shell
+npm install --save-dev lint-staged
+```
 
 
 ## commitlint
