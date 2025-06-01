@@ -388,7 +388,8 @@ symbolId: 'icon-[dir]-[name]',
 ## Css-reset
 ## SASS
 ```shell
-pnpm install -D sass
+pnpm install -D sass sass-loader
+
 ```
 
 ```ts

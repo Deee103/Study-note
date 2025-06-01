@@ -1,7 +1,1 @@
-[Mysql](Mysql.md)
-[Html](Html.md)
-[CSS](CSS.md)
-[Javascript](Javascript.md)
-[Vue-slot](Vue/Vue-slot.md)
-[proxy](docs/webpack/proxy.md)
-[vue](docs/vue/vue.md)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250601151741476.png)
