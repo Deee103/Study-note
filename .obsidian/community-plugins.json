@@ -1,5 +1,6 @@
 [
   "obsidian-git",
   "obsidian-image-auto-upload-plugin",
-  "editing-toolbar"
+  "editing-toolbar",
+  "remotely-save"
 ]
