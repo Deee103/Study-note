@@ -407,7 +407,7 @@ css: {
 ```
 
 #### 重置全局样式
-![](img/reset.scss)
+![](附件/reset.scss)
 
 ```scsss
 //src/assets/style/index.scss
