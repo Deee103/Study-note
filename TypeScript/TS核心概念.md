@@ -84,6 +84,7 @@ function add(x: number, y: number): number {
   return x + y;
 }
 ```
+![{DDC0761B-B3E5-4548-ABCA-3EED40B01AF8}.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250602180430307.png)
 
 #### 2. 对象类型约束
 ```typescript
