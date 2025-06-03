@@ -1,34 +1,30 @@
-import { BASE_URL, TIME_OUT } from "./config";
-import HYRequest from "./request";
-
-const hyRequest = new HYRequest({
+import HYReuest from './request'
+import { BASE_URL, TIME_OUT } from './config'
+export const hyRequest = new HYReuest({
   baseURL: BASE_URL,
   timeout: TIME_OUT
 })
 
-
-export const hyRequest2 = new HYRequest({
-  baseURL: "http://codercba.com:1888/airbnb/api",
-  timeout: 8000,
-
+// 配置局部拦截器实例
+export const hyRequest2 = new HYReuest({
+  baseURL: BASE_URL,
+  timeout: 10000,
   interceptors: {
-    requestSuccessFn: (config) => {
-      console.log("爱彼迎的请求成功的拦截")
+    requestSuccessFn: config => {
+      console.log('局部请求成功的拦截')
       return config
     },
-    requestFailureFn: (err) => {
-      console.log("爱彼迎的请求失败的拦截")
-      return err
-    },
-    responseSuccessFn: (res) => {
-      console.log("爱彼迎的响应成功的拦截")
+    responseSuccessFn: res => {
+      console.log('局部响应成功的拦截')
       return res
     },
-    responseFailureFn: (err) => {
-      console.log("爱彼迎的响应失败的拦截")
+    requestFailureFn: err => {
+      console.log('局部请求失败的拦截')
+      return err
+    },
+    responseFailureFn: err => {
+      console.log('局部响应失败的拦截')
       return err
     }
   }
 })
-
-export default hyRequest
