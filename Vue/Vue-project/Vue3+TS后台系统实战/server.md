@@ -736,10 +736,4 @@ app.get('/goods/address/sale', (req, res) => {
     ]
   })
 })
-
-// 绑定端口监听
-app.listen(PORT, () => {
-	console.log(`本地服务器启动成功, http://localhost:${PORT}`)
-})
-
 ```
