@@ -42,7 +42,7 @@
 
 ## 编译器原理详解
 ### 掌握编译原理
-### [掌握 babel 编译流程与原理编译器原理详解](编译原理/Babel与编译原理.md)
+### [掌握 babel 编译流程与原理编译器原理详解](Compilation%20Principles/Babel与编译原理.md)
 
 
 ### AST 基础
