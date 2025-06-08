@@ -1,13 +1,42 @@
 # 前端原理知识进阶
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192340039.png)
+## 基于 Chrome 浏览器渲染原理
+### 浏览器架构与渲染流程概述
+### 渲染树的构建
+### 布局与绘制
+### 性能分析与优化
 
 
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192411769.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192420766.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192434062.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192443325.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192448707.png)
+## 作用域与 JavaScript 执行过程深度解析
+### 作用域基础
+### 作用域链和变量解析
+### 执行过程与闭包
+
+## Javascript V8 引擎原理详解
+### V8 引擎架构详解
+### 内存管理与垃圾回收机制
+### 浏览器与 Node 事件循环机制详解
+
+## 前端异步编程
+### Javascript 中的异步模式
+### promise A+ 规范详解
+### 手写 Promise 通过 Promise Plus 所有测试用例
+### async await 原理详解
+
+## 面向对象编程思想
+### Javascript 面向对象编程思想浅析
+### 原型与原型链详解
+### 手写对象继承
+### class 语法详解
+
+
+## 函数式编程思想
+### 函数式编程思想浅析
+### 常见函数库及实战
+### 函数式编程思想应用
+### 高阶函数、柯里化与闭包
+
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192455199.png)
+
 
 # Javascript 超集与编译原理
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192541502.png)
@@ -64,6 +93,18 @@
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193332646.png)
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193339206.png)
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193342983.png)
+
+
+
+## 服务端架构体系
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193852288.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193858371.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193902378.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193907216.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193911202.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193914956.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193919037.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193924181.png)
 
 
 # 大前端之多端开发进阶（Taro）
