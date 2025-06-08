@@ -334,6 +334,8 @@ ESLint 专注于代码的语法和逻辑检查，而 Prettier 专注于代码的
 
 
 然后配置 `package.json` 中的 `lint-staged` 和 `husky`：
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608184810075.png)
+
 
 每次执行 `git commit` 时，**oxclint** 将自动检查并修复代码。
 
@@ -350,8 +352,12 @@ ESLint 专注于代码的语法和逻辑检查，而 Prettier 专注于代码的
 **oxclint** 支持自定义规则，可以根据团队的编码规范创建特定的规则检查。例如，如果团队要求函数命名必须使用驼峰命名法，可以创建一个自定义规则，强制执行这个命名规范。
 
 自定义规则的一个简单例子：
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608184820110.png)
+
 
 然后在配置文件中引入并启用该规则：
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608184826714.png)
+
 
 #### 定期更新和维护规则
 
