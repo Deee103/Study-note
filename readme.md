@@ -39,7 +39,18 @@
 
 
 # Javascript 超集与编译原理
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192541502.png)
+
+## 编译器原理详解
+### 掌握编译原理
+### [掌握 babel 编译流程与原理编译器原理详解](编译原理/Babel与编译原理.md)
+
+
+### AST 基础
+### 编译原理在低代码公式编辑器中的应用
+
+
+
+	
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192550178.png)
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192558275.png)
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192606433.png)
