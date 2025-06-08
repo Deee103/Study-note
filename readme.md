@@ -49,9 +49,17 @@
 ### 编译原理在低代码公式编辑器中的应用
 
 
+## Typescript 基础进阶与编译器详解
 
-	
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192550178.png)
+### 掌握 Typescript 语法
+
+[TypeScript 中的 extends 和 infer](TypeScript/面试/TypeScript%20中的%20extends%20和%20infer.md)
+
+### 深入 Typescript 高级用法
+### Typescript 在公共库中的约束
+### 了解 Typescript 编译器原理
+
+
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192558275.png)
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192606433.png)
 
