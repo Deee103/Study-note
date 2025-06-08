@@ -21,26 +21,31 @@ Babel 可以根据项目的需要选择性地进行语法转换，比如将箭�
 `devDependencies` 中列出了我们需要的依赖项，包括 Babel 核心库、CLI 工具、插件和预设。
 
 ### `babel.config.js` 文件
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608200534425.png)
 
 在 Babel 配置文件中，我们指定了使用 `@babel/plugin-transform-arrow-functions` 插件，它的作用是将箭头函数转换为普通的函数表达式。
 
 虽然常见的 `@babel/preset-env` 预设可以处理各种语法转换，但为了演示插件机制，我们在这里只使用了单一的插件来处理箭头函数的转换。
 
 ### `src/index.js` 文件
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608200615258.png)
 
 这个文件使用了 ES6 的箭头函数语法，目的是展示如何通过 Babel 将其转换为 ES5 语法。
 
 ### 运行 Babel 进行转换
 
 在项目的根目录下，运行以下命令来安装依赖：
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608200710538.png)
 
 安装完成后，可以使用如下命令来运行 Babel 进行编译：
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608200715652.png)
 
 此时，Babel 会读取 `src/index.js` 文件，并根据 `babel.config.js` 的配置将箭头函数转换为普通函数，生成的文件会输出到 `dist/index.js` 文件中。
 
 ### 编译后的代码
 
 编译后的代码 `dist/index.js` 会是如下形式：
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608200734689.png)
 
 可以看到，箭头函数 `() => {}` 被转换成了传统的匿名函数 `function () {}`。
 ## Babel 原理
