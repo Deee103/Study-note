@@ -259,6 +259,8 @@ ESLint 专注于代码的语法和逻辑检查，而 Prettier 专注于代码的
 **默认配置文件**： 如果没有自定义配置文件，**oxclint** 会自动使用内置的默认规则。但你可以创建 `.oxlintrc.json` 来进行调整和优化。
 
 一个基本的配置文件示例：
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608184612629.png)
+
 
 #### 配置项解释：
 
@@ -291,6 +293,7 @@ ESLint 专注于代码的语法和逻辑检查，而 Prettier 专注于代码的
 #### 运行 oxclint 检查
 
 配置完成后，你可以通过以下命令运行 **oxclint** 来检查项目中的代码：
+⚠️upload failed, check dev console
 
 
 
