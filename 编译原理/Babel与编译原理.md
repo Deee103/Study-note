@@ -101,9 +101,11 @@ Babel 的代码转换过程可以分为三个阶段：
 
 词法分析是编译器的第一个阶段，它负责将源代码转换为**词法单元流**（Token Stream）。每个词法单元（Token）表示源代码中的一个最小元素，例如变量名、关键字、操作符、数字等。词法分析器会根据语言的定义来识别这些词法单元。
 以下是一个简单的 JavaScript 词法分析器（lexer）的实现，它将源代码转换为词法单元流。
-对于输入 `"let x = 10 + 20"`，词法分析器将输出如下的词法单元流：
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608200947398.png)
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608200959001.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201124139.png)
+对于输入 `"let x = 10 + 20"`，词法分析器将输出如下的词法单元流：
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201138917.png)
 
 ## 语法分析（Parsing）
 
