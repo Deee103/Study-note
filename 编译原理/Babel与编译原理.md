@@ -112,17 +112,30 @@ Babel 的代码转换过程可以分为三个阶段：
 语法分析的任务是将词法单元流转换成**抽象语法树**（AST）。抽象语法树是编译器的核心数据结构，它以树的形式表达了代码的结构。语法分析器会根据语言的语法规则解析词法单元流，并构建出符合语言规范的 AST。
 
 以下是一个简单的语法分析器，它将词法单元流转换为 AST。
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201302097.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201310719.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201326243.png)
+
 语法分析器将生成以下 AST：
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201334411.png)
+
 ## 语义分析（Semantic Analysis）
 
 语义分析在 AST 的基础上进行，负责检查代码的正确性和安全性。例如，进行类型检查、作用域检查、变量声明的合法性等。语义分析确保代码不仅符合语法规则，还要保证程序在逻辑上是正确的。
 
 以下是一个简单的语义分析器，它会检查变量是否已经声明，并抛出错误：
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201341433.png)
+
 ## 代码生成（Code Generation）
 
 代码生成是编译器的最后一个阶段，它将经过语法和语义分析后的 AST 转换为目标代码。这个过程可以包括代码优化、生成中间代码（如字节码）、以及生成可执行的目标代码。
 以下是一个简单的代码生成器，它将 AST 转换为 JavaScript 代码字符串：
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201350206.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201354749.png)
+
 ## 编译器整体流程图
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201402390.png)
+
 
 ## 总结
 
@@ -151,18 +164,39 @@ Babel 的代码转换过程可以分为三个阶段：
 ### 语法高亮和编辑功能
 为提高用户体验，可以使用 `monaco-editor`，它是一个强大的代码编辑器，提供自动补全、语法高亮等功能，特别适用于复杂的公式或表达式输入。
 ### 设计流程图
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201417210.png)
 
 
 ## 实现过程：编译执行器
 ### 词法分析（Tokenizer）
 首先，我们需要将用户输入的表达式分解为词法单元，例如变量、数字、函数和操作符。下面的 `tokenize` 函数负责这个步骤：
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201433954.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201442472.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201447557.png)
+
 ### 语法分析（Parser）
 
 通过语法分析器，我们将词法单元转化为抽象语法树（AST）。在 AST 中，树的每个节点代表一个操作或操作数。
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201457714.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201508110.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201517815.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201521385.png)
+
 ### 解释器（Interpreter）
 解释器负责遍历抽象语法树并执行操作。每个节点根据其类型（如 `NumberLiteral`、`CallExpression` 或 `Variable`）进行相应的处理。
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201530762.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201536545.png)
+
 ### 使用示例
 最后，结合上述代码，通过一个示例来展示整个流程，从输入公式到生成结果。
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201542737.png)
+
 ## 编辑器支持：Monaco Editor
 
 使用 `monaco-editor` 来实现公式的编辑、自动补全和语法高亮。`monaco-editor` 是微软 VS Code 所使用的编辑器组件，可以为公式编辑器提供高效的开发体验。
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201557630.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201608663.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201624032.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201633362.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201644815.png)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608201649356.png)
