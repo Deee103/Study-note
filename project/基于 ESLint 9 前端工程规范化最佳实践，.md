@@ -303,6 +303,7 @@ ESLint 专注于代码的语法和逻辑检查，而 Prettier 专注于代码的
 
 **oxclint** 支持自动修复某些类型的代码风格问题，使用 `--fix` 参数即可自动修复：
 
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608184744068.png)
 
 
 这对于快速解决格式化问题和小的风格错误非常有帮助。
@@ -316,6 +317,8 @@ ESLint 专注于代码的语法和逻辑检查，而 Prettier 专注于代码的
 为了确保每次代码提交时都遵循编码规范，建议将 **oxclint** 集成到 CI/CD 流程中。集成后，每次提交时都会自动运行 **oxclint**，检测代码质量。
 
 以 GitHub Actions 为例，可以在 `.github/workflows/lint.yml` 中配置 **oxclint**：
+![](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608184723306.png)
+
 
 这将确保每次推送代码或发起 PR 时，**oxclint** 会自动运行并检查代码。
 
@@ -325,6 +328,7 @@ ESLint 专注于代码的语法和逻辑检查，而 Prettier 专注于代码的
 
 为了确保每次提交之前代码符合规范，可以将 **oxclint** 集成到 `pre-commit` 钩子中。首先需要安装 `husky` 和 `lint-staged`：
 
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608184802241.png)
 
 
 
