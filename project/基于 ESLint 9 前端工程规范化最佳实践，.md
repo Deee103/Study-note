@@ -176,6 +176,7 @@ ESLint 专注于代码的语法和逻辑检查，而 Prettier 专注于代码的
 
 通过简化配置，我们能快速应用基础规则，提升代码的一致性。
 
+![{80FCBF03-64EA-47A0-AFCF-920CB3A1FEE5}.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608184519459.png)
 
 
 ## TS 项目的 ESLint 配置
@@ -183,6 +184,8 @@ ESLint 专注于代码的语法和逻辑检查，而 Prettier 专注于代码的
 将 JS 项目迁移到 TypeScript 项目时，我们遇到了一些问题，主要是 ESLint 默认规则无法完全适应 TypeScript 的类型系统。为了解决这一问题，我们引入了 **@typescript-eslint/parser** 解析 TypeScript 代码，并扩展了规则集。
 
 ### TS 项目配置
+![{03A0FB88-C8D5-4B90-8E2A-79078D336891}.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608184532885.png)
+
 
 ### 配置要点
 
@@ -203,6 +206,8 @@ ESLint 专注于代码的语法和逻辑检查，而 Prettier 专注于代码的
 在迁移到 Vue 项目时，**.vue** 文件的特殊格式使得标准的 JS 和 TS 配置无法完全适用。因此，我们引入了 **vue-eslint-parser** 解析 Vue 文件，并结合 **@typescript-eslint/parser** 来处理其中的 TypeScript 代码。
 
 ### Vue 项目配置
+![{C68A5430-1D21-45DE-9293-E25DDB8179B1}.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608184547908.png)
+
 
 ### 配置要点
 
@@ -242,6 +247,7 @@ ESLint 专注于代码的语法和逻辑检查，而 Prettier 专注于代码的
 
 你可以通过 `npx` 或者将其添加为项目依赖来安装 **oxclint**。这里是安装的方式：
 
+![{03C82C44-DE23-45BE-A329-57099FCF9F73}.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608184602528.png)
 
 
 
