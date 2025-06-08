@@ -47,7 +47,9 @@ type ElementType<T> = T extends (infer U)[] ? U : never;
 type PromiseType<T> = T extends Promise<infer U> ? U : never;
 ```
 
-[Promise对象中提取类型](Promise对象中提取类型.md)
+> [!quote]
+> [Promise对象中提取类型](Promise对象中提取类型.md)
+
 ### 3. 多位置推断
 ```typescript
 type ParamType<T> = 
