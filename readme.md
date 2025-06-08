@@ -50,19 +50,25 @@
 
 
 ## Typescript 基础进阶与编译器详解
-
+---
 ### 掌握 Typescript 语法
 [TS核心概念](TypeScript/TS核心概念.md)
 [TS语法细节](TypeScript/TS语法细节.md)
 [TS语法扩展](TypeScript/TS语法扩展.md)
 
-#### 面试
+---
 [TypeScript 中的 extends 和 infer](TypeScript/面试/TypeScript%20中的%20extends%20和%20infer.md)
 
+---
 ### 深入 Typescript 高级用法
-
 [TS面向对象](TypeScript/TS面向对象.md)
 [TS泛型编程](TypeScript/TS泛型编程.md)
+
+---
+[Promise对象中提取类型](TypeScript/面试/Promise对象中提取类型.md)
+
+
+---
 ### Typescript 在公共库中的约束
 ### 了解 Typescript 编译器原理
 
