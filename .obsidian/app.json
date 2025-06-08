@@ -2,7 +2,7 @@
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
   "attachmentFolderPath": "/附件",
-  "newLinkFormat": "absolute",
+  "newLinkFormat": "relative",
   "useMarkdownLinks": true,
   "promptDelete": false
 }
