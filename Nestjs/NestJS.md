@@ -29,10 +29,13 @@ tags:
 #### 动态模块
 ---
 ### 生命周期管理
+![{145F3095-52D6-405D-80C4-D85E1731BE4E}.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250609173225571.png)
+
 #### 依赖的创建，管理与销毁
 ---
 ## 模块化设计
 ---
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250609173323065.png)
 ### 模块的基本概念
 
 #模块初始化
