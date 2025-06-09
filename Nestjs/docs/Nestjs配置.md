@@ -16,7 +16,7 @@
 ### 最简单的用法
 
 ```
-npm i --save @nestjs/config
+npm i --save @nestjs/config joi
 ```
 
 配置`src/app.module.ts`：
