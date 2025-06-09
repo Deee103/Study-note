@@ -1,10 +1,7 @@
-
-#模块初始化
-
-``` bash
-nest g module user
-nest g controller user
-```
+---
+tags:
+  - NestJS
+---
 ---
 ## 面向切面编程（AOP）
 ---
@@ -34,6 +31,13 @@ nest g controller user
 ## 模块化设计
 ---
 ### 模块的基本概念
+
+#模块初始化
+
+``` bash
+nest g module user
+nest g controller user
+```
 #### @Module 装饰器
 #### 模块之间的依赖关系
 #### 模块的导入与导出
