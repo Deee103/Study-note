@@ -74,12 +74,21 @@
 
 ## ECMAScript 核心特性详解
 
+### ECMAScript 常用新特性
+### 理解特性语法原理
+### 初始新特性编译支持
 
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192558275.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192606433.png)
+
 
 # Vue3应用架构设计与源码剖析
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192643497.png)
+## Vue3 基础夯实
+### 项目工程化与基础项目搭建
+### sfc
+### option api vs composition api
+### 常用 api 介绍
+
+---
+
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192649955.png)
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192655777.png)
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192700734.png)
