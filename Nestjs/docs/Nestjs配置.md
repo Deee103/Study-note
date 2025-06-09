@@ -742,6 +742,7 @@ pnpm i winston-daily-rotate-file
 ```
 
 ```ts
+// logs.module.ts
 import { Module } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { WinstonModule } from 'nest-winston';
@@ -774,7 +775,35 @@ import {
 export class LogsModule {}
 ```
 
+```ts
+// createRotateTransport.ts
+import * as DailyRotateFile from 'winston-daily-rotate-file';
+import { format } from 'winston';
+import { Console } from 'winston/lib/winston/transports';
+import { utilities } from 'nest-winston';
+  
+export const consoleTransports = new Console({
+  level: 'info',
+  format: format.combine(
+    format.timestamp(),
+    format.ms(),
+    utilities.format.nestLike('Winston'),
+  ),
+});  
 
+export function createRotateTransport(level: string, fileName: string) {
+  return new DailyRotateFile({
+    level,
+    dirname: 'logs',
+    filename: `${fileName}-%DATE%.log`,
+    datePattern: 'YYYY-MM-DD-HH',
+    zippedArchive: true,
+    maxSize: '20m',
+    maxFiles: '14d',
+    format: format.combine(format.timestamp(), format.simple()),
+  });
+}
+```
 ## 小结 
 
   - 使用第三方的包`config`，可以方便的读取配置信息，但是校验却需要在读取的位置来加，对于不需要验证，而需要全局使用的配置项可以使用这种方式；
