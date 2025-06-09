@@ -40,6 +40,7 @@ NestJS 会自动创建被 `@Injectable()` 注解的类的实例。不仅如此�
 
 ### 4. 按需调用
 一旦实例创建完成，NestJS 会根据应用程序的需要，在合适的时机调用这些实例。比如当客户端发起一个请求到 `UserController` 的某个路由时，`UserController` 中依赖注入的 `UserService` 实例就会被用来执行相关的业务逻辑。
+![{886E78EE-565B-409C-BB78-5C23CE3EA630}.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250609175820392.png)
 
 ## 三、依赖注入的好处
 ### 1. 解耦
