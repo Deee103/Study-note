@@ -137,12 +137,43 @@
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193241971.png)
 
 # 全栈开发之服务端架构进阶（NestJS）
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193315388.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193319992.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193328227.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193332646.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193339206.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193342983.png)
+## Node基础与常用模块详解
+### node 环境搭建
+### node 多版本管理方案
+### node 核心模块详解
+### node 模块化规范与包细则
+## Node 网络服务开发
+### OSI，TCP/IP 模型简介
+### TCP，UDP，HTTP 协议详解
+### net，dgram，http 模块详解
+### node 服务启动与部署
+
+## Postgresql 数据库与Redis 缓存技术揭秘
+### Docker 准备开发环境
+### 数据库与缓存基础概念
+### Postgresql 环境搭建与开发工具使用
+### 数据结构与算法进阶引导
+### ORM 方案与数据库驱动开发
+
+
+
+## NestJS 核心概念详解
+### NestJS 基本概念与框架解构
+[NestJS](Nestjs/NestJS.md)
+### 中间件与管道
+
+### 过滤器与守卫
+### 深入模块与依赖注入机制
+
+## NestJS 服务端开发实战
+
+### 数据库集成与操作
+### 身份认证与安全策略
+### 文件上传
+### 任务队列与分布式处理
+
+
+
 
 
 
