@@ -19,6 +19,12 @@
 npm i --save @nestjs/config joi
 ```
 
+
+> [!NOTE] Version
+>  "@nestjs/config": "^4.0.2",
+>  "joi": "^17.13.3",
+
+
 配置`src/app.module.ts`：
 
 ```tsx
@@ -29,7 +35,9 @@ import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
-    ConfigModule.forRoot(),
+    ConfigModule.forRoot({
+    isGlobal: true,
+    }),
   ],
   controllers: [AppController],
   providers: [AppService],
