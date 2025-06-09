@@ -730,7 +730,16 @@ export class AppModule {}
 
 ## 配置日志
 
+```bash
+# 创建日志文件 logs
+nest g mo common/logs --no-spec
+```
 
+```bash 
+# 安装日志依赖
+pnpm i winston nest-winston
+pnpm i winston-daily-rotate-file
+```
 
 ## 小结 
 
