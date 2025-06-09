@@ -732,7 +732,7 @@ export class AppModule {}
 
 ```bash
 # 创建日志文件 logs
-nest g mo common/logs --no-spec
+nest g mo common/logger --no-spec
 ```
 
 ```bash 
@@ -740,6 +740,40 @@ nest g mo common/logs --no-spec
 pnpm i winston nest-winston
 pnpm i winston-daily-rotate-file
 ```
+
+```ts
+import { Module } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
+import { WinstonModule } from 'nest-winston';
+import {
+  consoleTransports,
+  createRotateTransport,
+} from './createRotateTransport';
+
+@Module({
+  imports: [
+    WinstonModule.forRootAsync({
+      inject: [ConfigService],
+      useFactory: (configService: ConfigService) => {
+        const logOn = configService.get('LOG_ON') === 'true';
+        return {
+          transports: [
+            consoleTransports,
+            ...(logOn
+              ? [
+                  createRotateTransport('info', 'application'),
+                  createRotateTransport('warn', 'error'),
+                ]
+              : []),
+          ],
+        };
+      },
+    }),
+  ],
+})
+export class LogsModule {}
+```
+
 
 ## 小结 
 
