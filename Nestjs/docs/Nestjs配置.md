@@ -804,6 +804,12 @@ export function createRotateTransport(level: string, fileName: string) {
   });
 }
 ```
+
+
+## 全局过滤器
+
+
+
 ## 小结 
 
   - 使用第三方的包`config`，可以方便的读取配置信息，但是校验却需要在读取的位置来加，对于不需要验证，而需要全局使用的配置项可以使用这种方式；
