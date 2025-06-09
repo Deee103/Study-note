@@ -86,10 +86,17 @@
 ### sfc
 ### option api vs composition api
 ### 常用 api 介绍
+---
+[emit](Vue/面试/emit.md)
 
 ---
 
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192649955.png)
+## Vue3 进阶特性
+### Vue 新特性概况
+### composition api 使用与内置组件
+### 自定义 composition api
+### 自定义指令
+
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192655777.png)
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192700734.png)
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192705497.png)
