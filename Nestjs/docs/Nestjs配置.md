@@ -16,7 +16,7 @@
 ### 最简单的用法
 
 ```
-npm i --save @nestjs/config joi
+pnpm i --save @nestjs/config joi
 ```
 
 
@@ -55,27 +55,35 @@ DATABASE_PASSWORD=test123
 下面来使用`src/app.controller.ts`中使用：
 
 ```typescript
-import { Controller, Get } from '@nestjs/common';
-import { ConfigService } from '@nestjs/config';
-import { AppService } from './app.service';
+import { Module } from '@nestjs/common';
+import { AppController } from './app.controller';
+import { ConfigModule } from '@nestjs/config';
+import * as Joi from 'joi';
 
-@Controller()
-export class AppController {
-  constructor(
-    private readonly appService: AppService,
-    private configService: ConfigService,
-  ) {}
+const envFilePath = [`.env.${process.env.NODE_ENV || 'development'}`, '.env'];
 
-  @Get()
-  getHello(): string {
-    const dbUser = this.configService.get<string>('DATABASE_USER');
-    console.log(dbUser); // 这里来测试
-    return this.appService.getHello();
-  }
-}
+const schema = Joi.object({
+  NODE_ENV: Joi.string()
+    .valid('development', 'production')
+    .default('development'),
+  PORT: Joi.number().default(3000),
+  DB_TYPE: Joi.string().valid('mysql', 'postgres').default('mysql'),
+  DB_HOST: Joi.string().ip(),
+});
+
+@Module({
+  imports: [
+    ConfigModule.forRoot({
+      isGlobal: true,
+      envFilePath,
+      validationSchema: schema,
+    }),
+  ],
+  controllers: [AppController],
+  providers: [],
+})
+export class AppModule {}
 ```
-
-
 
 ### 进阶用法
 
