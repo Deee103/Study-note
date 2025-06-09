@@ -165,6 +165,42 @@ export class AppModule {}
 
 
 
+### config.module 封装
+
+``` bash
+# 创建config.module.ts
+nest g mo common/config --no-spec
+```
+
+
+```ts
+import { Module } from '@nestjs/common';
+import * as Joi from 'joi';
+import { ConfigModule as Config } from '@nestjs/config';
+
+const schema = Joi.object({
+  NODE_ENV: Joi.string()
+    .valid('development', 'production')
+    .default('development'),
+  PORT: Joi.number().default(3000),
+  DB_TYPE: Joi.string().valid('mysql', 'postgres').default('mysql'),
+  DB_HOST: Joi.string().ip(),
+}); 
+
+const envFilePath = [`.env.${process.env.NODE_ENV || 'development'}`, '.env'];
+@Module({
+  imports: [
+    Config.forRoot({
+      isGlobal: true,
+      envFilePath,
+      validationSchema: schema,
+    }),
+  ],
+})
+export class ConfigModule {}
+```
+
+
 如果需要读取公共的`.env`文件，则需要使用到`ConfigModule.forRoot`的`load`方法：
 
 - 安装依赖：
@@ -692,6 +728,10 @@ export class AppModule {}
 
 
 
+## 配置日志
+
+
+
 ## 小结 
 
   - 使用第三方的包`config`，可以方便的读取配置信息，但是校验却需要在读取的位置来加，对于不需要验证，而需要全局使用的配置项可以使用这种方式；
@@ -702,4 +742,6 @@ export class AppModule {}
 
     自定义的校验第三方包`class-validator`这里只是冰山一角，后面在学习数据验证的时候还会使用到它；
 
-  
+
+
+
