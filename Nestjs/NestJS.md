@@ -101,3 +101,41 @@ nest g controller user
 #### AuthGuard
 #### 基于角色的访问控制（RBAC）
 ---
+
+# NestJS 开发插件
+
+### 配置
+
+应用通常运行在不同的环境中。根据环境，应使用不同的配置设置。例如，通常本地环境依赖于特定的数据库凭证，仅对本地数据库实例有效。生产环境将使用一组单独的数据库凭据。由于配置变量发生变化，最佳做法是在环境中使用 [存储配置变量](https://12factor.net/config)。
+
+外部定义的环境变量通过 `process.env` 全局变量在 Node.js 内部是可见的。我们可以尝试通过在每个环境中单独设置环境变量来解决多个环境的问题。这很快就会变得笨拙，尤其是在需要轻松模拟和/或更改这些值的开发和测试环境中。
+
+在 Node.js 应用中，通常使用 `.env` 文件，保存键值对，其中每个键代表一个特定值，以表示每个环境。在不同的环境中运行应用只是交换正确的 `.env` 文件的问题。
+
+在 Nest 中使用此技术的一个好方法是创建一个 `ConfigModule`，它公开一个 `ConfigService`，它加载适当的 `.env` 文件。虽然你可以选择自己编写这样的模块，但为了方便起见，Nest 提供了开箱即用的 `@nestjs/config` 包。我们将在本章介绍这个包。
+#### 安装[#](https://nest.nodejs.cn/techniques/configuration#%E5%AE%89%E8%A3%85)
+
+要开始使用它，我们首先安装所需的依赖。
+
+```bash
+
+$ npm i --save @nestjs/config
+```
+
+> **提示**`@nestjs/config` 包内部使用 [dotenv](https://github.com/motdotla/dotenv)。
+#### 架构验证[#](https://nest.nodejs.cn/techniques/configuration#%E6%9E%B6%E6%9E%84%E9%AA%8C%E8%AF%81)
+
+如果未提供所需的环境变量或它们不符合某些验证规则，则在应用启动期间抛出异常是标准做法。`@nestjs/config` 包支持两种不同的方式来做到这一点：
+
+- [Joi](https://github.com/sideway/joi) 内置验证器。使用 Joi，你可以定义一个对象模式并根据它验证 JavaScript 对象。
+- 将环境变量作为输入的自定义 `validate()` 函数。
+
+要使用 Joi，我们必须安装 Joi 包：
+
+```bash
+
+$ npm install --save joi
+```
+
+### 第三方日志方案
+#winston #pino
