@@ -24,6 +24,7 @@ tags:
 ---
 ### 依赖注入
 [IoC（控制反转）和 DI（依赖注入）详解](docs/IoC（控制反转）和%20DI（依赖注入）详解.md)
+[NestJS 依赖注入](docs/NestJS%20依赖注入.md)
 #### Constructor Injection（构造函数注入）
 #### 属性注入
 #### 动态模块
