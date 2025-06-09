@@ -95,7 +95,9 @@ nest g controller user
 ---
 ### 管道与过滤器
 #### ValidationPipes
-#### ExceptionFilters
+#### ExceptionFilters[#](https://nest.nodejs.cn/exception-filters)
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250609183315512.png)
+
 ---
 ### 守卫与权限管理
 #### AuthGuard
