@@ -144,3 +144,33 @@ $ npm install --save joi
 
 ### 集成Redis
 #ioredis
+![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250610173049883.png)
+#### 安装[#](https://nest.nodejs.cn/microservices/redis#%E5%AE%89%E8%A3%85)
+
+要开始构建基于 Redis 的微服务，首先安装所需的包：
+
+```bash
+
+$ npm i --save ioredis
+```
+
+#### 概述[#](https://nest.nodejs.cn/microservices/redis#%E6%A6%82%E8%BF%B0)
+
+要使用 Redis 传输器，请将以下选项对象传递给 `createMicroservice()` 方法：
+
+content_copymain.ts
+
+JS
+
+```typescript
+
+const app = await NestFactory.createMicroservice<MicroserviceOptions>(AppModule, {
+  transport: Transport.REDIS,
+  options: {
+    host: 'localhost',
+    port: 6379,
+  },
+});
+```
+
+> **提示**`Transport` 枚举是从 `@nestjs/microservices` 包导入的。
