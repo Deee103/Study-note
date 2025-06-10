@@ -143,7 +143,7 @@ $ npm install --save joi
 #winston #pino
 
 ### 集成Redis
-#ioredis
+#ioredis[@nestjs-modules/ioredis - npm](https://www.npmjs.com/package/@nestjs-modules/ioredis)
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250610173049883.png)
 #### 安装[#](https://nest.nodejs.cn/microservices/redis#%E5%AE%89%E8%A3%85)
 
