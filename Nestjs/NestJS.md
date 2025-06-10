@@ -141,3 +141,6 @@ $ npm install --save joi
 
 ### 第三方日志方案
 #winston #pino
+
+### 集成Redis
+#ioredis
