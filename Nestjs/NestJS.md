@@ -17,6 +17,7 @@ tags:
 ---
 ## 控制反转（IoC）
 ---
+![](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250610223505868.png)
 ### IoC容器
 [IoC（控制反转）和 DI（依赖注入）详解](docs/IoC（控制反转）和%20DI（依赖注入）详解.md)
 #### Providers（服务提供者）
