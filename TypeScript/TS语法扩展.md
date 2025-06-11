@@ -1,5 +1,3 @@
-
-```markdown
 # TypeScript知识扩展
 王红元 coderwhy
 

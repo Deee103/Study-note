@@ -1,10 +1,4 @@
-### 🤖 Assistant
 
-
-
-为生成一个Markdown格式的文档 `02_TypeScript语法细节.pdf`，我们首先将内容整理并格式化。这里是一个包含上述内容的Markdown文档模板：
-
-```markdown
 # TypeScript语法细节
 王红元 coderwhy
 

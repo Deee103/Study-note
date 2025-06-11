@@ -1,5 +1,4 @@
 
-```markdown
 # TypeScript泛型编程
 王红元 coderwhy
 

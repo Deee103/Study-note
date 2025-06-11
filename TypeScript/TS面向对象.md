@@ -1,5 +1,3 @@
-
-```markdown
 # TypeScript面向对象
 王红元 coderwhy
 
