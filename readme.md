@@ -71,6 +71,8 @@
 [Promise对象中提取类型](TypeScript/面试/Promise对象中提取类型.md)
 [keyof 类型运算符](https://ts.nodejs.cn/docs/handbook/2/keyof-types.html)
 [typeof 类型运算符](https://ts.nodejs.cn/docs/handbook/2/typeof-types.html)
+[分配条件类型](TypeScript/docs/分配条件类型.md)
+[索引访问类型](TypeScript/docs/索引访问类型.md)
 
 ---
 ### Typescript 在公共库中的约束
