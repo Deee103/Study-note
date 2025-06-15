@@ -312,3 +312,4 @@ export default {
 ## 待学习
 commitizen
 monorepo
+tailwind
