@@ -10,7 +10,7 @@ tags:
 #### 拦截器（Interceptors）
 #### 中间件（Middleware）
 
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250616002046109.png)
+![Uploading file...mxj5w]()
 
 
 #### 守卫（Guards）
@@ -164,6 +164,174 @@ export class CoreModule {}
 #### ValidationPipes
 #### ExceptionFilters[#](https://nest.nodejs.cn/exception-filters)
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250609183315512.png)
+
+Nest 带有一个内置的异常层，负责处理应用中所有未处理的异常。当你的应用代码未处理异常时，该层会捕获该异常，然后自动发送适当的用户友好响应。
+
+开箱即用，此操作由内置的全局异常过滤器执行，该过滤器处理 `HttpException` 类型（及其子类）的异常。当异常无法识别时（既不是 `HttpException` 也不是继承自 `HttpException` 的类），内置异常过滤器会生成以下默认 JSON 响应：
+
+```json
+
+{
+  "statusCode": 500,
+  "message": "Internal server error"
+}
+```
+
+> **提示**全局异常过滤器部分支持 `http-errors` 库。基本上，任何包含 `statusCode` 和 `message` 属性的抛出异常都将被正确填充并作为响应发回（而不是用于无法识别的异常的默认 `InternalServerErrorException`）。
+
+##### 抛出标准异常[#](https://nest.nodejs.cn/exception-filters#%E6%8A%9B%E5%87%BA%E6%A0%87%E5%87%86%E5%BC%82%E5%B8%B8)
+
+Nest 提供了一个内置的 `HttpException` 类，从 `@nestjs/common` 包中暴露出来。对于典型的基于 HTTP REST/GraphQL API 的应用，最佳做法是在发生某些错误情况时发送标准 HTTP 响应对象。
+
+¥Nest provides a built-in `HttpException` class, exposed from the `@nestjs/common` package. For typical HTTP REST/GraphQL API based applications, it's best practice to send standard HTTP response objects when certain error conditions occur.
+
+例如，在 `CatsController` 中，我们有一个 `findAll()` 方法（一个 `GET` 路由处理程序）。假设此路由处理程序出于某种原因抛出异常。为了证明这一点，我们将硬编码如下：
+
+```typescript
+
+@Get()
+async findAll() {
+  throw new HttpException('Forbidden', HttpStatus.FORBIDDEN);
+}
+```
+
+> **提示**我们这里使用的是 `HttpStatus`。这是从 `@nestjs/common` 包导入的辅助枚举。
+
+当客户端调用此端点时，响应如下所示：
+
+```json
+
+{
+  "statusCode": 403,
+  "message": "Forbidden"
+}
+```
+
+`HttpException` 构造函数采用两个必需的参数来确定响应：
+
+- `response` 参数定义 JSON 响应主体。它可以是 `string` 或 `object`，如下所述。
+    
+- `status` 参数定义了 [HTTP 状态代码](https://web.nodejs.cn/en-US/docs/Web/HTTP/Status)。
+    
+
+默认情况下，JSON 响应主体包含两个属性：
+
+- `statusCode`：默认为 `status` 参数中提供的 HTTP 状态代码
+    
+- `message`：基于 `status` 的 HTTP 错误的简短描述
+    
+
+要仅覆盖 JSON 响应正文的消息部分，请在 `response` 参数中提供一个字符串。要覆盖整个 JSON 响应主体，请在 `response` 参数中传递一个对象。Nest 将序列化该对象并将其作为 JSON 响应主体返回。
+
+第二个构造函数参数 - `status` - 应该是有效的 HTTP 状态代码。最佳做法是使用从 `@nestjs/common` 导入的 `HttpStatus` 枚举。
+
+有第三个构造函数参数（可选） - `options` - 可用于提供错误 [cause](https://nodejs.cn/blog/release/v16.9.0/#error-cause)。此 `cause` 对象未序列化到响应对象中，但它可用于记录目的，提供有关导致 `HttpException` 被抛出的内部错误的有价值信息。
+
+这是一个覆盖整个响应主体并提供错误原因的示例：
+
+```typescript
+
+@Get()
+async findAll() {
+  try {
+    await this.service.findAll()
+  } catch (error) {
+    throw new HttpException({
+      status: HttpStatus.FORBIDDEN,
+      error: 'This is a custom message',
+    }, HttpStatus.FORBIDDEN, {
+      cause: error
+    });
+  }
+}
+```
+
+使用上面的内容，这就是响应的样子：
+
+```json
+
+{
+  "status": 403,
+  "error": "This is a custom message"
+}
+```
+
+##### 异常日志记录[#](https://nest.nodejs.cn/exception-filters#%E5%BC%82%E5%B8%B8%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95)
+
+默认情况下，异常过滤器不会记录内置异常（如 `HttpException`）（以及从它继承的任何异常）。抛出这些异常时，它们不会出现在控制台中，因为它们被视为正常应用流程的一部分。相同的行为适用于其他内置异常，如 `WsException` 和 `RpcException`。
+
+这些异常都继承自基本 `IntrinsicException` 类，该类从 `@nestjs/common` 包中导出。此类有助于区分属于正常应用操作的异常和非正常应用操作的异常。
+
+如果要记录这些异常，可以创建自定义异常过滤器。我们将在下一节中解释如何执行此操作。
+
+##### 自定义异常[#](https://nest.nodejs.cn/exception-filters#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8)
+
+在许多情况下，你不需要编写自定义异常，并且可以使用内置的 Nest HTTP 异常，如下一节所述。如果你确实需要创建自定义异常，那么最好创建你自己的异常层次结构，其中你的自定义异常继承自 `HttpException` 基类。通过这种方法，Nest 将识别你的异常，并自动处理错误响应。让我们实现这样一个自定义异常：
+
+```typescript
+
+export class ForbiddenException extends HttpException {
+  constructor() {
+    super('Forbidden', HttpStatus.FORBIDDEN);
+  }
+}
+```
+
+由于 `ForbiddenException` 扩展了基 `HttpException`，它将与内置异常处理程序无缝协作，因此我们可以在 `findAll()` 方法中使用它。
+
+```typescript
+
+@Get()
+async findAll() {
+  throw new ForbiddenException();
+}
+```
+
+##### 内置 HTTP 异常[#](https://nest.nodejs.cn/exception-filters#%E5%86%85%E7%BD%AE-http-%E5%BC%82%E5%B8%B8)
+
+Nest 提供了一组继承自基 `HttpException` 的标准异常。这些是从 `@nestjs/common` 包中公开的，代表了许多最常见的 HTTP 异常：
+
+- `BadRequestException`
+    
+- `UnauthorizedException`
+    
+- `NotFoundException`
+    
+- `ForbiddenException`
+    
+- `NotAcceptableException`
+    
+- `RequestTimeoutException`
+    
+- `ConflictException`
+    
+- `GoneException`
+    
+- `HttpVersionNotSupportedException`
+    
+- `PayloadTooLargeException`
+    
+- `UnsupportedMediaTypeException`
+    
+- `UnprocessableEntityException`
+    
+- `InternalServerErrorException`
+    
+- `NotImplementedException`
+    
+- `ImATeapotException`
+    
+- `MethodNotAllowedException`
+    
+- `BadGatewayException`
+    
+- `ServiceUnavailableException`
+    
+- `GatewayTimeoutException`
+    
+- `PreconditionFailedException`
+
+
 
 ---
 ### 守卫与权限管理
