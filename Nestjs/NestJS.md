@@ -91,6 +91,19 @@ nest g controller user
 
 
 #### 模块的导入与导出
+
+##### 模块重新导出[#](https://nest.nodejs.cn/modules#%E6%A8%A1%E5%9D%97%E9%87%8D%E6%96%B0%E5%AF%BC%E5%87%BA)
+
+如上所示，模块可以导出其内部提供程序。此外，他们可以重新导出他们导入的模块。在下面的示例中，`CommonModule` 既被导入到 `CoreModule` 中，又被从 `CoreModule` 中导出，从而使其可用于导入该模块的其他模块。
+
+```typescript
+
+@Module({
+  imports: [CommonModule],
+  exports: [CommonModule],
+})
+export class CoreModule {}
+```
 ---
 ### 核心模块
 #### AppModule （应用根模块）
