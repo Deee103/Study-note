@@ -307,31 +307,8 @@ export default {
    fix(router): 修复导航守卫重定向问题 (close #123)
    ```
 
-4. **IDE 集成**：
-   - VS Code 安装 ESLint/Prettier/Stylelint 插件
-   - 启用 `Editor: Format On Save` 选项
-```
 
-主要改进点：
 
-1. **结构重组**：
-   - 将关联工具集中到Git工作流章节（Husky/Lint-Staged/Commitlint）
-   - 分离样式体系（Sass/PostCSS）和核心工具（Mock/SVG）
-
-2. **配置优化**：
-   - 修复ESLint对Vue+TS的支持配置
-   - 完善路径别名多目录方案（增加`#/types`）
-   - 规范PostCSS插件配置（补充autoprefixer）
-
-3. **增补关键内容**：
-   - 添加最佳实践说明（配置优先级/提交格式）
-   - 增加IDE集成建议
-   - 补充CSS变量文件示例
-
-4. **错误修正**：
-   - 删除React相关插件（原笔记在Vue项目中混用）
-   - 修正lint-staged文件匹配模式
-   - 统一pnpm安装命令格式
-
-此版本配置已经过Vite+Vue3+TypeScript项目验证，可直接用于工程化项目搭建。
-
+## 待学习
+commitizen
+monorepo
