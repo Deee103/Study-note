@@ -27,6 +27,38 @@ tags:
 #### Providers（服务提供者）
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250616000732682.png)
 
+##### 工厂提供器：`useFactory`[#](https://nest.nodejs.cn/fundamentals/custom-providers#%E5%B7%A5%E5%8E%82%E6%8F%90%E4%BE%9B%E5%99%A8%EF%BC%9Ausefactory)
+
+`useFactory` 语法允许动态创建提供程序。实际提供器将由工厂函数返回的值提供。工厂功能可以根据需要简单或复杂。一个简单的工厂可能不依赖于任何其他提供器。更复杂的工厂本身可以注入计算结果所需的其他提供器。对于后一种情况，工厂提供器语法有一对相关的机制：
+
+1. 工厂函数可以接受（可选）参数。
+    
+2. （可选的）`inject` 属性接受一组提供器，Nest 将在实例化过程中解析这些提供器并将其作为参数传递给工厂函数。此外，这些提供程序可以标记为可选。这两个列表应该是相关的：Nest 将以相同的顺序将 `inject` 列表中的实例作为参数传递给工厂函数。下面的示例演示了这一点。
+
+```typescript
+
+const connectionProvider = {
+  provide: 'CONNECTION',
+  useFactory: (optionsProvider: MyOptionsProvider, optionalProvider?: string) => {
+    const options = optionsProvider.get();
+    return new DatabaseConnection(options);
+  },
+  inject: [MyOptionsProvider, { token: 'SomeOptionalProvider', optional: true }],
+  //       \______________/             \__________________/
+  //        This provider                The provider with this token
+  //        is mandatory.                can resolve to `undefined`.
+};
+
+@Module({
+  providers: [
+    connectionProvider,
+    MyOptionsProvider, // class-based provider
+    // { provide: 'SomeOptionalProvider', useValue: 'anything' },
+  ],
+})
+export class AppModule {}
+```
+
 
 
 #### 服务的注册与使用
