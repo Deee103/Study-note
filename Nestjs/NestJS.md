@@ -37,7 +37,7 @@ tags:
 [DTO 和 DAO](docs/DTO%20和%20DAO.md)
 #### Constructor Injection（构造函数注入）
 
-**DI常识**
+**DI常识[#](https://nest.nodejs.cn/fundamentals/custom-providers#di-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)**
 当Nest IoC 容器实例化 `CatsController` 时，它首先查找任何依赖*。当它找到 `CatsService` 依赖时，它会根据注册步骤（上面的#3）对 `CatsService` 令牌执行查找，返回 `CatsService` 类。假设 `SINGLETON` 作用域（默认行为），Nest 将创建 `CatsService` 的实例，缓存它并返回它，或者如果已经缓存了一个实例，则返回现有实例。
 
 *这个解释有点简化以说明这一点。我们忽略的一个重要字段是分析代码依赖的过程非常复杂，并且发生在应用引导期间。一个关键特性是依赖分析（或 "创建依赖图"）是可传递的。在上面的示例中，如果 `CatsService` 本身有依赖，那么这些依赖也会被解析。依赖图确保依赖以正确的顺序解决 - 本质上是 "自下而上"。这种机制使开发者不必管理如此复杂的依赖图。
