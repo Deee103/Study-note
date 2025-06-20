@@ -21,22 +21,17 @@
   "smart_view_filter": {
     "render_markdown": true,
     "show_full_path": false,
+    "expanded_view": false,
     "results_limit": "20"
   },
-  "smart_notices": {
-    "muted": {
-      "embedding_complete": true,
-      "done_import": true,
-      "new_version_available": true,
-      "done_initial_scan": true,
-      "embedding_progress": true
-    }
-  },
+  "excluded_headings": "",
+  "language": "en",
+  "new_user": true,
   "smart_chat_threads": {
-    "active_thread_key": "Untitled Chat 1748499531034",
     "chat_model": {
+      "adapter": "custom",
+      "ollama": {},
       "platform_key": "openai",
-      "adapter": "openai",
       "anthropic": {
         "model_key": "claude-3-5-sonnet-latest"
       },
@@ -17623,12 +17618,15 @@
         "model_key": "mistralai/mistral-7b-instruct:free"
       },
       "custom": {
-        "api_adapter": "openai"
+        "api_adapter": "openai",
+        "id": "deepseek-ai/DeepSeek-R1"
       },
       "openai": {
-        "model_key": ""
+        "model_key": "",
+        "api_key": "sk-gahfbcislwtndhhyirtzsepvmzaidtzduipffkzwuvxlmdww"
       }
     },
+    "active_thread_key": "Untitled Chat 1750409784797",
     "system_prompt": "",
     "detect_self_referential": true,
     "review_context": true,
@@ -17637,6 +17635,14 @@
     "modifier_key_to_send": "shift",
     "use_tool_calls": true
   },
-  "version": "3.0.1",
-  "excluded_headings": ""
+  "smart_notices": {
+    "muted": {
+      "embedding_complete": true,
+      "done_import": true,
+      "new_version_available": true,
+      "done_initial_scan": true,
+      "embedding_progress": true
+    }
+  },
+  "version": "3.0.1"
 }

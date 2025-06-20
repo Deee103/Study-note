@@ -6,3 +6,8 @@
 /.smart-env
 /.smart-env/multi/project_ESlint_md.ajson
 /.smart-env/smart_env.json
+
+
+
+# Ignore Smart Environment folder
+.smart-env
