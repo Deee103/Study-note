@@ -11,11 +11,11 @@ sr-ease: 230
 ---
 ### [[Vue 多 v-model 通信机制]]
 #### **核心概念**
-```markdown
+
 1. `v-model` 本质：语法糖，等价于 `:modelValue` + `@update:modelValue`
 2. 多值传递：Vue 3 支持**多个 `v-model` 绑定**，如 `v-model:propA`、`v-model:propB`
 3. 数据流：父组件 → 通过 `v-model` 传递 → 子组件 → 通过 `emit` 修改
-```
+
 
 #### **实现方案**
 ##### 父组件 (Parent.vue)
@@ -146,5 +146,5 @@ B -- emit('update:prop') --> A
 此模式在 [[Element Plus 表单组件]] 中广泛应用，推荐结合源码学习实现细节。
 
 
-**相关文章**
+**相关链接**
 [[emit]]
