@@ -60,7 +60,8 @@
 [TS语法扩展](TypeScript/TS语法扩展.md)
 
 ---
-[TypeScript 中的 extends 和 infer](TypeScript/面试/TypeScript%20中的%20extends%20和%20infer.md)
+1. [TypeScript 中的 extends 和 infer](TypeScript/面试/TypeScript%20中的%20extends%20和%20infer.md)
+2. [extends补充](TypeScript/面试/extends补充.md)
 
 ---
 ### 深入 Typescript 高级用法
