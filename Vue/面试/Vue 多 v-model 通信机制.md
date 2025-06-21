@@ -1,3 +1,9 @@
+---
+sr-due: 2025-06-23
+sr-interval: 1
+sr-ease: 230
+---
+
 #review 
 
 以下是一篇关于 Vue 中 `v-model` 向子组件传递多个值及子组件修改值的学习笔记，结合 Vue 3 的 Composition API 和 Options API 两种实现方式：
@@ -138,3 +144,7 @@ B -- emit('update:prop') --> A
 ```
 
 此模式在 [[Element Plus 表单组件]] 中广泛应用，推荐结合源码学习实现细节。
+
+
+**相关文章**
+[[emit]]
