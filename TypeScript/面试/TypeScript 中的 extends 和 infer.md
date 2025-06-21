@@ -89,3 +89,4 @@ type T3 = Unpacked<() => number>;     // number
 ---
 **相关链接**
 
+1. [extends补充](extends补充.md)
