@@ -1,3 +1,11 @@
+---
+sr-due: 2025-06-24
+sr-interval: 1
+sr-ease: 226
+---
+
+
+#review 
 # Vue 组件通信：`emit` 的深度解析与应用指南
 
 ```mermaid
