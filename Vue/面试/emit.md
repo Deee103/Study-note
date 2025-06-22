@@ -2,9 +2,11 @@
 sr-due: 2025-06-25
 sr-interval: 2
 sr-ease: 230
+tags:
+  - Vue
+  - Vue-review
 ---
 
-#review 
 
 在 Vue 中，`emit` 是 **同步** 的，而不是异步的。
 

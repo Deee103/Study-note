@@ -2,9 +2,11 @@
 sr-due: 2025-06-25
 sr-interval: 2
 sr-ease: 230
+tags:
+  - Vue
+  - Vue-review
 ---
 
-#review 
 
 以下是一篇关于 Vue 中 `v-model` 向子组件传递多个值及子组件修改值的学习笔记，结合 Vue 3 的 Composition API 和 Options API 两种实现方式：
 
