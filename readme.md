@@ -178,21 +178,77 @@
 
 
 # 六、大前端&全栈架构之性能专项优化
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192946816.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192952043.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193001609.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193005538.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193010589.png)
+
+## 1、React Devtools 使用与性能分析
+### 常见性能优化工具详解
+### React 应用级性能分析与优化
+### 状态更新粒度优化
+### immutable 方案与 immer
+### jotai 与 zustand 优化实践
+
+
+## 2、Vue 应用级性能分析与优化
+### Vue Devtools 使用与性能分析
+### 常见性能优化工具详解
+### 应用内状态更新优化
+### 内置优化组件使用
+### 其他优化细节
+
+## 3、编译构建与打包全面优化
+### webpack5 开发构建优化详解
+### webpack5 产物构建优化详解
+### vite 开发构建优化详解
+### vite 产物构建优化详解。
+### externals
+### cache
+### chunk
+### treeshaking
+
+## 4、资源优化
+### 静态资源优化
+### http 缓存
+### 本地缓存方案
+### 首屏加载优化
+
+
 
 # 七、大前端&全栈架构之微内核，微前端与服务端渲染
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193057516.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193101907.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193109236.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193120481.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193125808.png)
+
+
+## 1、Vue 服务端渲染(Nuxt)与原理详解
+### Vue 服务端渲染基础概念
+### Nuxt 基础使用与进阶
+### Nuxt 原理剖析
+### Vue ssR 实现思路浅析
+
+## 2、React 服务端渲染(Next)与原理详解
+### React 服多端渲染基础概念
+### Next 基础使用与进阶
+### Next 原理剖析
+### React ssR 实现思路浅析
+
+## 3、微内核/插件化设计思想
+### 微内核/插件化思想剖析
+### 微内核/插件化思想核心设计
+### 微内核/插件化思想应用
+### 开源优秀项目微内核/插件化实例
+## 4、微前端与 Module Federation 技术实践
+### 微前端、Webpack Module Federation 基础概念
+### single-spa 与 qiankun 方案浅析
+### 微前端实现原理剖析
+### 展望字节 bigfish
+
+
 
 # 八、设计思想之设计模式，数据结构与算法
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193154497.png)
+
+
+## 1、前端常用设计模式精讲
+### 设计模式概念
+### 常见设计模式精析
+### 设计模式场景应用
+### 设计模式实战
+
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193203015.png)
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193209545.png)
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193214540.png)
@@ -240,37 +296,257 @@
 
 
 ## 6、服务端架构体系
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193852288.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193858371.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193902378.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193907216.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193911202.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193914956.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193919037.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193924181.png)
+
+## 网络层
+
+### HTTP 服务器
+#### 请求处理
+#### 响应管理
+#### URL解析与路由
+
+### WebSocket
+#### 实时双向通信
+#### 连接管理
+#### 消息处理
+
+### TCP/IP 通信
+#### 低层协议处理
+#### 长连接管理
+
+
+## 中间件处理
+### Cookie 管理
+#### 用户会话管理
+#### 安全性设置(HttpOnly、Secure)
+
+### CORS(跨域资源共享)
+跨域请求支持
+安全性控制
+
+### Body 解析
+JSON 解析
+URL编码表单解析
+
+### 日志记录
+请求日志
+错误日志
+
+### 压缩传输
+Gzip/Deflate 压缩
+
+## 缓存层
+
+### HTTP 缓存控制
+Cache-Control 设置
+ETag 验证
+
+### 内存缓存
+Node-cache
+Redis 集成
+
+## 数据库层
+### 数据库驱动
+MongoDB(NoSQL数据库)
+MySQL/PostgresQL(关系型数据库)
+
+### ORM(对象关系映射)
+Sequelize
+Mongoose
+
+### 连接池与事务管理
+连接池优化
+事务支持
+
+## 性能优化
+### 负载均衡
+轮询调度
+负载均衡策略
+
+### 数据库优化
+查询优化(索引、查询缓存)
+批量操作
+
+
+### CDN与静态资源管理
+CDN 加速
+静态资源缓存与分发
+
+## 任务调度与异步处理
+### 任务队列
+RabbitMQ
+Redis Queue
+### 定时任务
+Cron
+Node-schedule
+### 异步处理
+Event Loop
+Promise .async/await 模式
+
+## 架构设计模式
+### MVC(Model-View-Controller)架构
+Model:业务逻辑与数据处理
+View:响应结果展示
+Controller:处理请求与响应逻辑
+### 服务拆分与微服务
+服务模块化
+微服务架构
+
+### 中间件架构
+通过中间件处理请求流水线
+解耦业务逻辑
+
+## 安全层
+
+### 身份认证与授权
+JWT (JSON Web Token)
+OAuth2
+
+### 数据加密
+HTTPS
+密码加密(bcrypt、argon2)
+
+### 输入验证与清理
+防止 SQL注入
+防止 XSS 攻击
+参数验证
+
 
 
 # 十、大前端之多端开发进阶（Taro）
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193440199.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193446251.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193450743.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193457695.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193504659.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193508108.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193542430.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193600061.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193605197.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193612336.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193619650.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193631058.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193636134.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193641189.png)
+
+## 桌面端应用多端开发实战
+### 基于 Vite 的 Electron 工程设计
+### 跨端组件封装与多端适配
+### 进程模型与常用 API
+### Electron 运行机制浅析
+### Tauri 2 轻量化方案简介
+
+## 原生应用多端开发之 React-Native
+### React Native 介绍与环境
+### 跨端组件封装与多端适配
+### 路由与常见 API 详解
+### 状态管理与数据流控制
+### 原理与源码浅析
+
+## 移动应用多端开发之 Taro 进阶
+### Taro 环境配置与优化
+### 跨端组件封装与多端适配
+### 状态管理与数据流控制
+### 源码浅析
+## 移动应用多端开发之 uniapp 进阶
+### uniapp 环境配置与调试
+### 跨端组件封装与适配
+### 原生能力集成与使用
+### 状态管理与数据缓存
+### 多端发布
+
+## 小程序开发方案全解
+### 小程序框架与生态概述
+### 项目初始化与开发工具配置
+### 界面设计与组件化开发细节
+### 数据请求与接口对接
+### 小程序发布与原理详解
+
+
+
+# 高级前端专家项目实战集锦之企业级类 vue-use composition 库架构设计与实践(Vue3)
+### monorepo 架构
+### 工程化设计
+### 项目规范化、流程化、自动化
+### 组件库文档方案组件库调试与开发
+### 组件库样式体系设计
+### Button 组件设计详解
+### 组件库发布流程
+### 面试场景问题解析
+
+# 企业级可视化无代码平台架构设计与实践(Vue3)
+### 需求与方案评审
+### 架构设计与方案设计
+### 基础工程搭建
+### 物料系统设计
+### 物料编排引擎实现
+### 物料配置
+### 可视化渲染引擎设计可视化物料协议
+### canvas、svg 概览
+### zrender、d3 自定义可视化物料
+### 无代码应用发布流程
+### 版本控制
+### 无代码项目构建与发布
+### CI/CD
+### 高级前端专家项目实战集锦之
 
 
 
 
-# <项目名称> [![版本](https://img.shields.io/badge/version-v1.0.0-blue)] [![许可证](https://img.shields.io/badge/license-MIT-green)]
-> 一句话价值主张（解决什么痛点）
-+ 推荐使用Badge可视化：
-![Node](https://img.shields.io/badge/Node.js-18.0+-green)
-![React](https://img.shields.io/badge/React-18.2-blue)
+
+# 高级前端专家项目实战集锦之企业级类 mantine 组件库架构设计与实践(React18)
+### monorepo 架构
+### 工程化设计
+### 项目规范化、流程化、自动化
+### 组件库文档方案
+### 组件库调试与开发
+### 组件库样式体系设计
+### Button 组件设计详解
+### 组件库发布流程
+### 版本控制
+### 面试场景问题解析
+
+
+# 高级前端专家项目实战集锦之企业级团队脚手架命令行工具架构设计与实践(Nodejs)
+### 脚手架开发需求评审
+### 脚手架实现方案与要点分析
+### 工程架构与基础框架开发
+### 模板引擎
+### 自动化流程编写
+### 丰富脚手架命令
+### 构建与发布
+
+
+
+# 高级前端专家项目实战集锦之企业级监控平台全栈架构设计与实践(Valina+React19+Vue3)
+## 埋点 SDK(手动、无痕、可视化)
+## 异常监控
+## 性能监控
+## 日志清洗加工
+## 监控大屏
+
+# 高级前端专家项目实战集锦之企业级编辑器类飞书文档架构设计与实践(React19)
+### 需求分析与方案评审
+### 项目架构设计分析
+### 基础功能前端开发
+### 编辑器核心架构
+### 富文本编辑器原理浅析编辑器方案评审与选型
+### 编辑器核心模块(编辑、undo/redo 等)开发
+### 文档物料插件化设计与实践精析
+### 丰富文档物料实现展望
+### 编辑器 Nestjs 服务端架构设计
+### Postgresql 库设计、redis 缓存设计
+### 编辑器协同服务架构设计
+### AI能力集成
+### docker-compose 服务编排
+### Tauri2 桌面端(MacOs、Windows)构建
+
+# 高级前端专家项目实战集锦之企业级通用低代码平台架构设计与实践(React19)
+## 需求分析与方案评审项目架构设计分析
+## 编排引警需求与设计
+## 数据源管理需求与设计
+## 变量系统设计
+## 低代码平台完整流程与产品设计精析编排引翠设计与 SDK 开发
+## 物料布局与配置
+## 数据源在线表格开发
+## 基于 Postgresql 基础业务表设计
+## 变量系统架构设计
+## 变量提供器设计与开发
+## 变量渲染器设计与开发
+
+# 企业级数字李生低代码平台架构设计与实践(Valina+Webassembly+Vue3)
+## 需求分析与方案评审
+## 项目架构设计分析
+## 编排引堅需求与设计
+## Cesium
+## WebGL 数字变生平台设计与实践
+## 高级前端专家项目实战集锦之
+
+
+
+
