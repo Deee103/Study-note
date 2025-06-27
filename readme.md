@@ -267,3 +267,10 @@
 ![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193641189.png)
 
 
+
+
+# <项目名称> [![版本](https://img.shields.io/badge/version-v1.0.0-blue)] [![许可证](https://img.shields.io/badge/license-MIT-green)]
+> 一句话价值主张（解决什么痛点）
++ 推荐使用Badge可视化：
+![Node](https://img.shields.io/badge/Node.js-18.0+-green)
+![React](https://img.shields.io/badge/React-18.2-blue)
