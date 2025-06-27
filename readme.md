@@ -38,7 +38,6 @@
 ### 函数式编程思想应用
 ### 高阶函数、柯里化与闭包
 
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608192455199.png)
 
 
 # 二、Javascript 超集与编译原理
@@ -249,10 +248,24 @@
 ### 设计模式场景应用
 ### 设计模式实战
 
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193203015.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193209545.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193214540.png)
-![image.png](https://cdn.jsdelivr.net/gh/Deee103/note-picbed/20250608193241971.png)
+## 2、冲击中大厂算法真题分类详解
+### 双指针、滑动窗口与二叉树概念与实现
+### 动态规划、回湖等算法概念与实现
+### 堆与图概念与实现
+### 大厂面试真题按类剖析
+
+## 前端高频面试算法题精析
+### 前端面试高频算法盘点
+### 高频算法概念与实现思路
+### 高频算法代码实现
+
+## 数据结构与算法详解
+### 时间复杂度&空间复杂度
+### 常见数据结构
+### 常见算法
+### 数据结构与算法进阶导引
+
+
 
 # 九、全栈开发之服务端架构进阶（NestJS）
 ## 1、Node基础与常用模块详解
