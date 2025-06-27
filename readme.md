@@ -1,100 +1,105 @@
 # 一、前端原理知识进阶
-## 1、基于 Chrome 浏览器渲染原理
-1. 浏览器架构与渲染流程概述
-2. 渲染树的构建
-3. 布局与绘制
-4. 性能分析与优化
+### 1、基于 Chrome 浏览器渲染原理
+
+1. **浏览器架构与渲染流程概述**
+2. **渲染树的构建**
+3. **布局与绘制**
+4. **性能分析与优化**
 
 ---
-## 2、作用域与 JavaScript 执行过程深度解析
-1. 作用域基础
-2. 作用域链和变量解析
-3. 执行过程与闭包
+### 2、作用域与 JavaScript 执行过程深度解析
+
+1. **作用域基础**
+2. **作用域链和变量解析**
+3. **执行过程与闭包**
 	- [普通函数的二义性问题](JavaScript/面试/普通函数的二义性问题.md)
 	- [箭头函数](JavaScript/面试/箭头函数.md)
 
 ---
-## 3、Javascript V8 引擎原理详解
-1. V8 引擎架构详解
-2. 内存管理与垃圾回收机制
-3. 浏览器与 Node 事件循环机制详解
+### 3、Javascript V8 引擎原理详解
+
+1. **V8 引擎架构详解**
+2. **内存管理与垃圾回收机制**
+3. **浏览器与 Node 事件循环机制详解**
 
 ---
-## 4、前端异步编程
-### Javascript 中的异步模式
-### promise A+ 规范详解
-### 手写 Promise 通过 Promise Plus 所有测试用例
-### async await 原理详解
+### 4、前端异步编程
 
-## 5、面向对象编程思想
-### Javascript 面向对象编程思想浅析
-### 原型与原型链详解
-### 手写对象继承
-### class 语法详解
+1. **Javascript 中的异步模式**
+2. **promise A+ 规范详解**
+3. **手写 Promise 通过 Promise Plus 所有测试用例**
+4. **async await 原理详解**
 
+---
+### 5、面向对象编程思想
 
-## 6、函数式编程思想
-### 函数式编程思想浅析
-### 常见函数库及实战
-### 函数式编程思想应用
-### 高阶函数、柯里化与闭包
+1. **Javascript 面向对象编程思想浅析**
+2. **原型与原型链详解**
+3. **手写对象继承**
+4. **class 语法详解**
 
+---
 
+### 6、函数式编程思想
+
+1. **函数式编程思想浅析**
+2. **常见函数库及实战**
+3. **函数式编程思想应用**
+4. **高阶函数、柯里化与闭包**
+
+---
 
 # 二、Javascript 超集与编译原理
 
-## 1、编译器原理详解
-### 掌握编译原理
-### 掌握 babel 编译流程与原理编译器原理详解[#](Compilation%20Principles/Babel与编译原理.md)
+### 1、编译器原理详解
 
-
-### AST 基础
-### 编译原理在低代码公式编辑器中的应用
-
-
-## 2、Typescript 基础进阶与编译器详解
----
-### 掌握 Typescript 语法
-[TS核心概念](TypeScript/TS核心概念.md)
-[TS语法细节](TypeScript/TS语法细节.md)
-[TS语法扩展](TypeScript/TS语法扩展.md)
+1. **掌握编译原理**
+2. **掌握 babel 编译流程与原理编译器原理详解[#](Compilation%20Principles/Babel与编译原理.md)**
+3. **AST 基础**
+4. **编译原理在低代码公式编辑器中的应用**
 
 ---
-1. [TypeScript 中的 extends 和 infer](TypeScript/面试/TypeScript%20中的%20extends%20和%20infer.md)
-2. [extends补充](TypeScript/面试/extends补充.md)
+### 2、Typescript 基础进阶与编译器详解
+
+1. **掌握 Typescript 语法**
+- [TS核心概念](TypeScript/TS核心概念.md)
+- [TS语法细节](TypeScript/TS语法细节.md)
+- [TS语法扩展](TypeScript/TS语法扩展.md)
+-  [TypeScript 中的 extends 和 infer](TypeScript/面试/TypeScript%20中的%20extends%20和%20infer.md)
+- [extends补充](TypeScript/面试/extends补充.md)
 
 ---
-### 深入 Typescript 高级用法
-[TS面向对象](TypeScript/TS面向对象.md)
-[TS泛型编程](TypeScript/TS泛型编程.md)
+2. **深入 Typescript 高级用法**
+- [TS面向对象](TypeScript/TS面向对象.md)
+- [TS泛型编程](TypeScript/TS泛型编程.md)
+- [Promise对象中提取类型](TypeScript/面试/Promise对象中提取类型.md)
+- [keyof 类型运算符](https://ts.nodejs.cn/docs/handbook/2/keyof-types.html)
+- [typeof 类型运算符](https://ts.nodejs.cn/docs/handbook/2/typeof-types.html)
+- [分配条件类型](TypeScript/docs/分配条件类型.md)
+- [索引访问类型](TypeScript/docs/索引访问类型.md)
 
 ---
-[Promise对象中提取类型](TypeScript/面试/Promise对象中提取类型.md)
-[keyof 类型运算符](https://ts.nodejs.cn/docs/handbook/2/keyof-types.html)
-[typeof 类型运算符](https://ts.nodejs.cn/docs/handbook/2/typeof-types.html)
-[分配条件类型](TypeScript/docs/分配条件类型.md)
-[索引访问类型](TypeScript/docs/索引访问类型.md)
+3. **Typescript 在公共库中的约束**
+4. **了解 Typescript 编译器原理**
 
----
-### Typescript 在公共库中的约束
-### 了解 Typescript 编译器原理
+### 3、ECMAScript 核心特性详解
 
-## 3、ECMAScript 核心特性详解
-
-### ECMAScript 常用新特性
-### 理解特性语法原理
-### 初始新特性编译支持
+1. **ECMAScript 常用新特性**
+2. **理解特性语法原理**
+3. **初始新特性编译支持**
 
 
 
 # 三、Vue3应用架构设计与源码剖析
 ## 1、Vue3 基础夯实
-### 项目工程化与基础项目搭建
-### sfc
-### option api vs composition api
-### 常用 api 介绍
+1. **项目工程化与基础项目搭建**
+2. **sfc**
+3. **option api vs composition api**
+
 ---
-[emit](Vue/面试/emit.md)
+4. **常用 api 介绍**
+
+- [emit](Vue/面试/emit.md)
 
 ---
 
